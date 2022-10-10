@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Number System Conversion</title>
+</head>
+<body>
+    <h1>Number System Conversion</h1>
+    <select class="itype" id="iptype">  <!--2, 8, 10, 16 система поле выбора (из какой системы переводить)-->
+        <option value="ipbin">2</option>
+        <option value="ipoct">8</option>
+        <option value="ipdec">10</option>
+        <option value="iphex">16</option>
+        <option value="ip31">31</option>
+    </select>  
+    <input class="inum" id="ipnum">
+    <button class="btn" onclick="convert()">перевод в</button>
+    <select class="otype" id="optype">  <!--2, 8, 10, 16 система (в какую систему переводить)-->
+        <option value="opbin">2</option>
+        <option value="opoct">8</option>
+        <option value="opdec">10</option>
+        <option value="ophex">16</option>
+        <option value="op31">31</option>
+    </select>   
+    <input class="onum" id="opnum"> <!--конечный результат-->
+</body>
+<script src="SysConv.js"></script>
+</html> 
